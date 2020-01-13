@@ -621,9 +621,20 @@ pre tt:after {
   }
 }
 
-.main {
-  height: 100vh;
+.layout {
+  padding-top: 3vh;
   width: 5000px;
+  @include breakpoint(m) {
+    padding-top: 12vh;
+  }
+}
+
+.main {
+  height: 97vh;
+  width: 5000px;
+  @include breakpoint(m) {
+    height: 88vh;
+  }
   background: #fff1f1;
   margin: auto;
   position: relative;
